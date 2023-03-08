@@ -1,0 +1,15 @@
+$desktop: 840px;
+
+$mobile: 767px;
+
+@mixin desktop-view {
+	@media  (min-width: #{$desktop}){
+		@content;
+	}
+}
+
+@mixin mobile-view {
+	@media  (max-width: #{$mobile}){
+		@content;
+	}
+}

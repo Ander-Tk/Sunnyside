@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
+.bg-cover {
+  overflow: hidden;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+}
+
+header {
+  background-image: url(/images/mobile/image-header.jpg);
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+}
+@media (min-width: 840px) {
+  header {
+    background-image: url(/images/desktop/image-header.jpg);
+  }
+}
+
+.nav-link {
+  color: hsl(0, 0%, 100%);
+}
+@media (max-width: 767px) {
+  .nav-link {
+    color: hsl(210, 4%, 67%);
+  }
+  .nav-link:hover {
+    color: hsl(51, 100%, 49%);
+  }
+}
+
+.btn-link {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(212, 27%, 19%);
+}
+.btn-link:hover {
+  background-color: rgba(255, 255, 255, 0.431372549);
+  color: hsl(0, 0%, 100%);
+}
+@media (max-width: 767px) {
+  .btn-link {
+    background-color: hsl(51, 100%, 49%);
+    max-width: 150px;
+  }
+  .btn-link:hover {
+    background-color: hsl(51, 100%, 49%);
+    color: hsl(0, 0%, 100%);
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-btn {
+    align-self: center;
+    display: grid;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav-pop {
+    margin-top: 80px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    min-height: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .pop-link {
+    text-align: center !important;
+    width: 75vw !important;
+    padding: 2rem 0 2rem 0;
+    background-color: hsl(0, 0%, 100%);
+  }
+}
+
+article h2 {
+  font-family: "Fraunces", serif;
+  color: hsl(212, 27%, 19%);
+}
+article p {
+  font-family: "Barlow", sans-serif;
+  color: hsl(210, 4%, 67%);
+}
+article a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Fraunces", serif;
+  color: hsl(212, 27%, 19%);
+}
+article a:hover {
+  color: hsl(212, 27%, 19%);
+}
+@media (min-width: 840px) {
+  article .article-text {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.bg-brand {
+  height: 600px;
+  background-image: url(/images/mobile/image-transform.jpg);
+}
+@media (min-width: 840px) {
+  .bg-brand {
+    background-image: url(/images/desktop/image-transform.jpg);
+  }
+}
+
+.bg-audience {
+  height: 600px;
+  background-image: url(/images/mobile/image-stand-out.jpg);
+}
+@media (min-width: 840px) {
+  .bg-audience {
+    background-image: url(/images/desktop/image-stand-out.jpg);
+  }
+}
+
+.bg-design {
+  background-position: 50% 0%;
+  text-align: center;
+  display: grid;
+  align-content: end;
+  background-image: url(/images/mobile/image-graphic-design.jpg);
+  height: 750px;
+}
+@media (min-width: 840px) {
+  .bg-design {
+    background-image: url(/images/desktop/image-graphic-design.jpg);
+    height: 600px;
+  }
+}
+.bg-design h2 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  color: hsl(167, 40%, 24%);
+}
+.bg-design p {
+  font-family: "Barlow", sans-serif;
+  color: hsl(167, 40%, 24%);
+}
+
+.bg-photo {
+  background-position: 50% 0%;
+  text-align: center;
+  display: grid;
+  align-content: end;
+  background-image: url(/images/mobile/image-photography.jpg);
+  height: 750px;
+}
+@media (min-width: 840px) {
+  .bg-photo {
+    background-image: url(/images/desktop/image-photography.jpg);
+    height: 600px;
+  }
+}
+.bg-photo h2 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  color: hsl(198, 62%, 26%);
+}
+.bg-photo p {
+  font-family: "Barlow", sans-serif;
+  color: hsl(198, 62%, 26%);
+  margin-bottom: 2rem;
+}
+
+.carousel-grid .milkbottle {
+  height: 200px;
+  background-image: url(/images/mobile/image-gallery-milkbottles.jpg);
+}
+@media (min-width: 840px) {
+  .carousel-grid .milkbottle {
+    height: 400px;
+    background-image: url(/images/desktop/image-gallery-milkbottles.jpg);
+  }
+}
+.carousel-grid .orange {
+  height: 200px;
+  background-image: url(/images/mobile/image-gallery-orange.jpg);
+}
+@media (min-width: 840px) {
+  .carousel-grid .orange {
+    height: 400px;
+    background-image: url(/images/desktop/image-gallery-orange.jpg);
+  }
+}
+.carousel-grid .cone {
+  height: 200px;
+  background-image: url(/images/mobile/image-gallery-cone.jpg);
+}
+@media (min-width: 840px) {
+  .carousel-grid .cone {
+    height: 400px;
+    background-image: url(/images/desktop/image-gallery-cone.jpg);
+  }
+}
+.carousel-grid .sugarcube {
+  height: 200px;
+  background-image: url(/images/mobile/image-gallery-sugar-cubes.jpg);
+}
+@media (min-width: 840px) {
+  .carousel-grid .sugarcube {
+    height: 400px;
+    background-image: url(/images/desktop/image-gallery-sugarcubes.jpg);
+  }
+}
+
+.testimonials h3 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  letter-spacing: 4.4px;
+  text-transform: uppercase;
+  color: hsl(210, 4%, 67%);
+}
+.testimonials img {
+  width: 85px;
+  height: 85px;
+}
+.testimonials p {
+  font-family: "Barlow", sans-serif;
+  color: hsl(213, 9%, 39%);
+  line-height: 1.8;
+}
+.testimonials .name {
+  color: hsl(212, 27%, 19%);
+  font-weight: 900 !important;
+  font-family: "Fraunces", serif;
+  margin-bottom: 0;
+}
+.testimonials .job {
+  color: hsl(210, 4%, 67%);
+}
+
+footer {
+  background-color: hsl(167, 44%, 70%);
+  font-family: "Barlow", sans-serif;
+  color: hsl(168, 34%, 41%);
+}
+footer .sunnylogo path {
+  fill: hsl(167, 40%, 24%);
+}
+footer .footer-links path {
+  fill: hsl(168, 34%, 41%);
+}
+footer .footer-links path:hover {
+  fill: hsl(0, 0%, 100%);
+}
+footer ul {
+  list-style-type: none;
+}
+footer a {
+  text-decoration: none;
+  color: hsl(168, 34%, 41%);
+}
+footer a:hover {
+  color: hsl(0, 0%, 100%);
+}
+
+.hero {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 100%);
+}
+
+/*# sourceMappingURL=main.css.map */

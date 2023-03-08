@@ -1,0 +1,71 @@
+@use '../base/' as *;
+
+header{
+    background-image: url(/images/mobile/image-header.jpg);
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+
+    //Fonts
+    font-family: $Barlow;
+    font-size: $ft-size;
+
+    @include desktop-view(){
+        background-image: url(/images/desktop/image-header.jpg);
+    }
+}
+
+.nav-link{
+    color: color(--White);
+    @include mobile-view(){ 
+        color: color(--Grayishblue);
+        &:hover{
+            color: color(--Yellow);
+        }
+    }
+}
+
+.btn-link{
+    background-color: color(--White);
+    color: color(--Verydarkdesaturatedblue);
+    &:hover{
+        background-color: #ffffff6e;
+        color: color(--White);
+    }
+    @include mobile-view(){
+        background-color: color(--Yellow);
+        max-width: 150px;
+        &:hover{
+            background-color: color(--Yellow);
+            color: color(--White);
+        }
+    }
+}
+
+.contact-btn{
+    @include mobile-view(){
+        align-self: center;
+        display: grid;
+    }
+}
+
+.nav-pop{
+    @include mobile-view(){
+        margin-top: 80px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        min-height: 100%;
+    }
+}
+.pop-link{
+    @include mobile-view(){
+        text-align: center!important;
+        width: 75vw!important;
+        padding: 2rem 0 2rem 0;
+        background-color: color(--White);
+    }
+}

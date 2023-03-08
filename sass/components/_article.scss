@@ -1,0 +1,92 @@
+@use '../base/' as *;
+
+article{ 
+    h2 {
+        font-family: $Fraunces;
+        color: color(--Verydarkdesaturatedblue);
+    }
+    p{
+        font-family: $Barlow;
+        color: color(--Grayishblue);
+    }
+    a{  
+        text-transform: uppercase;
+        text-decoration: none;
+        font-family: $Fraunces;
+        color: color(--Verydarkdesaturatedblue);
+
+        &:hover{
+            color: color(--Verydarkdesaturatedblue);
+        }
+    }
+    
+    .article-text{
+        @include desktop-view(){
+            display: flex;
+            align-items: center;
+            align-content: center;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+.bg-brand{
+    height: 600px;
+    background-image: url(/images/mobile/image-transform.jpg);
+    @include desktop-view(){
+        background-image: url(/images/desktop/image-transform.jpg);
+    }
+}
+
+.bg-audience{
+    height: 600px;
+    background-image: url(/images/mobile/image-stand-out.jpg);
+    @include desktop-view(){
+        background-image: url(/images/desktop/image-stand-out.jpg);
+    }
+}
+
+.bg-design{
+    background-position: 50% 0%;
+    text-align: center;
+    display: grid; align-content: end;  
+    background-image: url(/images/mobile/image-graphic-design.jpg);
+    height: 750px;
+    @include desktop-view(){
+    
+        background-image: url(/images/desktop/image-graphic-design.jpg);
+        height: 600px;
+    }
+
+    h2 {
+        font-family: $Fraunces;
+        font-weight: 900;
+        color: color(--Darkdesaturatedcyan);
+    }
+    p{
+        font-family: $Barlow;
+        color: color(--Darkdesaturatedcyan);
+    }
+}
+
+.bg-photo{
+    background-position: 50% 0%;
+    text-align: center;
+    display: grid; align-content: end;  
+    background-image: url(/images/mobile/image-photography.jpg);
+    height: 750px;
+    @include desktop-view(){
+        background-image: url(/images/desktop/image-photography.jpg);
+        height: 600px;
+    }
+    h2 {
+        font-family: $Fraunces;
+        font-weight: 900;
+        color: color(--Darkblue);
+    }
+    p{
+        font-family: $Barlow;
+        color: color(--Darkblue);
+        margin-bottom: 2rem;
+    }
+}

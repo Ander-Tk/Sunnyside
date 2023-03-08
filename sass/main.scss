@@ -1,0 +1,9 @@
+@use './base' as *;
+@use './components' as *;
+
+.hero{
+    font-family: $Fraunces;
+    font-weight: 900; letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    color: color(--White);
+}

@@ -1,0 +1,33 @@
+@use '../base/' as *;
+
+footer{
+    background-color: color(--footer-background);
+    font-family: $Barlow;
+    color: color(--Darkmoderatecyan);
+    
+    .sunnylogo{
+        path{ 
+            fill: color(--Darkdesaturatedcyan);
+        }
+    }
+
+    .footer-links{
+        path{ 
+            fill: color(--Darkmoderatecyan);
+            &:hover{
+                fill: color(--White);
+            }
+        }
+    }
+
+    ul{
+        list-style-type: none;
+    }
+    a{
+        text-decoration: none;
+        color: color(--Darkmoderatecyan);
+        &:hover{
+            color: color(--White);
+        }
+    }
+}

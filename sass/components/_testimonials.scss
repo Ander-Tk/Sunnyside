@@ -1,0 +1,26 @@
+@use '../base/' as *;
+
+.testimonials{
+    h3{
+        font-family: $Fraunces;
+        font-weight: 900;
+        letter-spacing: 4.4px;
+        text-transform: uppercase;
+        color: color(--Grayishblue);  
+    }
+    img{ width: 85px; height: 85px;}
+    p{
+        font-family: $Barlow;
+        color: color(--Verydarkgrayishblue);
+        line-height: 1.8;
+    }
+    .name{
+        color: color(--Verydarkdesaturatedblue);
+        font-weight: 900 !important;
+        font-family: $Fraunces;
+        margin-bottom: 0;
+    }
+    .job{
+        color: color(--Grayishblue);
+    }
+}
