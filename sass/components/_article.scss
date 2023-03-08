@@ -32,17 +32,17 @@ article{
 
 .bg-brand{
     height: 600px;
-    background-image: url(/images/mobile/image-transform.jpg);
+    background-image: url('../images/mobile/image-transform.jpg');
     @include desktop-view(){
-        background-image: url(/images/desktop/image-transform.jpg);
+        background-image: url('../images/desktop/image-transform.jpg');
     }
 }
 
 .bg-audience{
     height: 600px;
-    background-image: url(/images/mobile/image-stand-out.jpg);
+    background-image: url('../images/mobile/image-stand-out.jpg');
     @include desktop-view(){
-        background-image: url(/images/desktop/image-stand-out.jpg);
+        background-image: url('../images/desktop/image-stand-out.jpg');
     }
 }
 
@@ -50,11 +50,11 @@ article{
     background-position: 50% 0%;
     text-align: center;
     display: grid; align-content: end;  
-    background-image: url(/images/mobile/image-graphic-design.jpg);
+    background-image: url('../images/mobile/image-graphic-design.jpg');
     height: 750px;
     @include desktop-view(){
     
-        background-image: url(/images/desktop/image-graphic-design.jpg);
+        background-image: url('../images/desktop/image-graphic-design.jpg');
         height: 600px;
     }
 
@@ -66,6 +66,7 @@ article{
     p{
         font-family: $Barlow;
         color: color(--Darkdesaturatedcyan);
+        margin-bottom: 2rem;
     }
 }
 
@@ -73,10 +74,10 @@ article{
     background-position: 50% 0%;
     text-align: center;
     display: grid; align-content: end;  
-    background-image: url(/images/mobile/image-photography.jpg);
+    background-image: url('../images/mobile/image-photography.jpg');
     height: 750px;
     @include desktop-view(){
-        background-image: url(/images/desktop/image-photography.jpg);
+        background-image: url('../images/desktop/image-photography.jpg');
         height: 600px;
     }
     h2 {

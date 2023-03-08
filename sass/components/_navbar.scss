@@ -1,7 +1,7 @@
 @use '../base/' as *;
 
 header{
-    background-image: url(/images/mobile/image-header.jpg);
+    background-image: url('../images/mobile/image-header.jpg');
     position: relative;
     overflow: hidden;
     background-repeat: no-repeat;
@@ -13,7 +13,7 @@ header{
     font-size: $ft-size;
 
     @include desktop-view(){
-        background-image: url(/images/desktop/image-header.jpg);
+        background-image: url('../images/desktop/image-header.jpg');
     }
 }
 
